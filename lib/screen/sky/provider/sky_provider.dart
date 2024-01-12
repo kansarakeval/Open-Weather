@@ -21,6 +21,7 @@ class SkyProvider with ChangeNotifier {
 
   // Network
   bool isOnline = false;
+
   void changeStatus(bool status) {
     isOnline = status;
     notifyListeners();
@@ -33,6 +34,15 @@ class SkyProvider with ChangeNotifier {
     SharedHelper sharedHelper = SharedHelper.sharedHelper;
     bool? isTheme = await sharedHelper.getTheme();
     isLight = isTheme ?? false;
+    notifyListeners();
+  }
+
+  //BookMark
+  List<String>? cityList = [];
+
+  void BookMark() async {
+    SharedHelper sharedHelper = SharedHelper.sharedHelper;
+    cityList = await sharedHelper.getBookMark();
     notifyListeners();
   }
 }
