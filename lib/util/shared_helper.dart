@@ -14,4 +14,13 @@ class SharedHelper {
     SharedPreferences shr = await SharedPreferences.getInstance();
     return shr.getStringList("bookmark");
   }
+
+  Future<void> setTheme(bool value) async {
+    SharedPreferences shr = await SharedPreferences.getInstance();
+    shr.setBool("islight", value);
+  }
+  Future<bool?> getTheme() async {
+    SharedPreferences shr = await SharedPreferences.getInstance();
+    return shr.getBool("islight");
+  }
 }

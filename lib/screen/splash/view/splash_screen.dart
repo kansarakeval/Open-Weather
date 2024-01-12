@@ -29,15 +29,15 @@ class _SplashScreenState extends State<SplashScreen> {
                 borderRadius: BorderRadius.circular(15),
                 child: Image.asset(
                   'assets/img/logo.jpg',
-                  height: 180,
-                  width: 180,
+                  height: 150,
+                  width: 150,
                   fit: BoxFit.cover,
                 ),
               ),
               SizedBox(height: 5,),
               const Text(
                 "Open Weather",
-                style: TextStyle(fontSize: 25, fontWeight: FontWeight.bold),
+                style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
               )
             ],
           ),
