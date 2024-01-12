@@ -27,5 +27,5 @@ samples, guidance on mobile development, and a full API reference.
 
 
 https://github.com/kansarakeval/sky_scrapper_app/assets/119046853/59b67c52-845b-4ff7-99ad-52e34cc187e7
-<a href = "https://drive.google.com/file/d/1_-3OpbLYPH5g1NJ0E-PVuDgh_Yh7glyV/view?usp=sharing"><img src="https://github.com/kansarakeval/sky_scrapper_app/assets/119046853/cc98c60b-c207-4349-8db0-29a3fee5b2fc"width=""200></a>
+<a href = "https://drive.google.com/file/d/1_-3OpbLYPH5g1NJ0E-PVuDgh_Yh7glyV/view?usp=sharing"> <img src="https://github.com/kansarakeval/sky_scrapper_app/assets/119046853/cc98c60b-c207-4349-8db0-29a3fee5b2fc"width="200"></a>
 
