@@ -40,9 +40,25 @@ class SkyProvider with ChangeNotifier {
   //BookMark
   List<String>? cityList = [];
 
-  void BookMark() async {
-    SharedHelper sharedHelper = SharedHelper.sharedHelper;
-    cityList = await sharedHelper.getBookMark();
+  void getBookMark() async {
+    List<String>? l1 = await SharedHelper.sharedHelper.getBookMark();
+    if (l1 != null) {
+      cityList = l1;
+    }
+    notifyListeners();
+  }
+
+  void addBookMarks() {
+    cityList!.add(skySearch);
+    SharedHelper.sharedHelper.addBookMark(cityList!);
+    getBookMark();
+    notifyListeners();
+  }
+
+  void removeBookMarks() {
+    cityList!.remove(skySearch);
+    SharedHelper.sharedHelper.addBookMark(cityList!);
+    getBookMark();
     notifyListeners();
   }
 }
